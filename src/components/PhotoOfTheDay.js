@@ -12,7 +12,6 @@ class PhotoOfTheDay extends Component {
     axios
       .get("https://api.nasa.gov/planetary/apod?api_key=" + API_KEY)
       .then(response => {
-        console.log(response.data);
         this.setState({ photo: response.data });
       });
   }
