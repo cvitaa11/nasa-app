@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../img/logo.png";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -20,15 +21,15 @@ const Navbar = () => {
       </button>
       <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div className="navbar-nav">
-          <a className="nav-item nav-link active" href="#">
+          <NavLink to="/" className="nav-item nav-link active">
             Home <span className="sr-only">(current)</span>
-          </a>
-          <a className="nav-item nav-link" href="#">
+          </NavLink>
+          <NavLink to="/about" className="nav-item nav-link">
             About
-          </a>
-          <a className="nav-item nav-link" href="#">
-            API
-          </a>
+          </NavLink>
+          <NavLink to="/picoftheday" className="nav-item nav-link">
+            Pic of the day
+          </NavLink>
         </div>
       </div>
     </nav>
