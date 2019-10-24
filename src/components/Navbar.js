@@ -5,9 +5,9 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <a className="navbar-brand" href="#">
+      <NavLink to="/" className="navbar-brand">
         <img src={logo} alt="logo" id="brand-icon" />
-      </a>
+      </NavLink>
       <button
         className="navbar-toggler"
         type="button"
@@ -21,14 +21,14 @@ const Navbar = () => {
       </button>
       <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div className="navbar-nav">
-          <NavLink to="/" className="nav-item nav-link active">
+          <NavLink to="/" className="nav-item nav-link">
             Home <span className="sr-only">(current)</span>
           </NavLink>
           <NavLink to="/about" className="nav-item nav-link">
             About
           </NavLink>
           <NavLink to="/picoftheday" className="nav-item nav-link">
-            Pic of the day
+            APOD
           </NavLink>
         </div>
       </div>
